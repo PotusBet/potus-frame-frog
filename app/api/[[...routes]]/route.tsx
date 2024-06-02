@@ -6,9 +6,8 @@ import { devtools } from 'frog/dev'
 import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
 import whyImage from "./Slide1.png"
-// import { frogUi } from 'frog/ui'
-import { Box, Heading, Text, VStack, Rows, Image, Row, HStack, vars } from './ui.ts'
-import { Span } from 'next/dist/trace'
+
+import { Box, Heading, Text, VStack, Rows, Image, Row, HStack, vars } from './ui'
 
 const app = new Frog({
   assetsPath: '/',
