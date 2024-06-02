@@ -5,10 +5,15 @@ import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
 import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
+import whyImage from "./Slide1.png"
+// import { frogUi } from 'frog/ui'
+import { Box, Heading, Text, VStack, Rows, Image, Row, HStack, vars } from './ui.ts'
+import { Span } from 'next/dist/trace'
 
 const app = new Frog({
   assetsPath: '/',
   basePath: '/api',
+  ui: { vars },
   // Supply a Hub to enable frame verification.
   // hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
 })
@@ -19,40 +24,58 @@ const app = new Frog({
 app.frame('/', (c) => {
   const { buttonValue, status } = c
   return c.res({    
-    image: (
-      <div
-        style={{
-          alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
-          backgroundSize: '100% 100%',
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          height: '100%',
-          justifyContent: 'center',
-          textAlign: 'center',
-          width: '100%',
-        }}
+    image: (      
+      <Box
+        grow
+        alignVertical="center"
+        backgroundColor="beige"
+        padding="4"
       >
-        <div
-          style={{
-            color: 'white',
-            fontSize: 60,
-            fontStyle: 'normal',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            marginTop: 30,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          This is the first Frame.
-        </div>
-      </div>
+        <Rows gap="8" grow>        
+          <Row backgroundColor="beige" height="2/20">
+            <HStack gap="8" grow alignHorizontal="center" >
+              <Text size="28">
+                SO
+              </Text>
+              <Text color="red" size="28" style='bold'>
+                ONCHAIN SUMMER
+              </Text>
+              <Text size="28">
+                BEGINS!
+              </Text>
+            </HStack>  
+          </Row>
+          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+            <Image src="/uncleSamTransparent.png" width={'256'}/>
+          </Row>
+          <Row backgroundColor="beige" height="6/20" >
+            <VStack gap="0" grow alignVertical="center">
+              <HStack gap="8" grow alignHorizontal="center" >
+                  <Text size="28">
+                    I WANT
+                  </Text>                  
+                  <Text color="red" size="28">
+                    YOU
+                  </Text>  
+                </HStack>
+                <HStack gap="8" grow alignHorizontal="center" >
+                  <Text size="28">
+                    TO BRING
+                  </Text>
+                  <Text color="red"size="28">
+                    POTUS
+                  </Text>
+                  <Text size="28">
+                    ONCHAIN!
+                  </Text>
+                </HStack>
+              </VStack>    
+          </Row>
+          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
+        </Rows>        
+      </Box>
     ),
+  
     intents: [      
       <Button action="/how">Click To Airdrop</Button>,     
     ],
@@ -62,39 +85,53 @@ app.frame('/', (c) => {
 app.frame('/how', (c) => {
   const { buttonValue, status } = c
   return c.res({
-    image: (
-      <div
-        style={{
-          alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
-          backgroundSize: '100% 100%',
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          height: '100%',
-          justifyContent: 'center',
-          textAlign: 'center',
-          width: '100%',
-        }}
+    image: (      
+      <Box
+        grow
+        alignVertical="center"
+        backgroundColor="beige"
+        padding="4"
       >
-        <div
-          style={{
-            color: 'white',
-            fontSize: 60,
-            fontStyle: 'normal',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            marginTop: 30,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          This is the second Frame.
-        </div>
-      </div>
+        <Rows gap="8" grow>        
+          <Row backgroundColor="beige" height="2/20">
+            <HStack gap="8" grow alignHorizontal="center" >
+              <Text size="28">
+                HOW TO BRING
+              </Text>
+              <Text color="red" size="28" style='bold'>
+                POTUS
+              </Text>
+              <Text size="28">
+                ONCHAIN?
+              </Text>
+            </HStack>  
+          </Row>
+          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+            <Image src="/uncleSamTransparent.png" width={'256'}/>
+          </Row>
+          <Row backgroundColor="beige" height="6/20" >
+            <VStack gap="0" grow alignVertical="center">
+              <HStack gap="8" grow alignHorizontal="center" >
+                  <Text size="28">
+                    BY AIRDROP
+                  </Text>                  
+                  <Text color="red" size="28">
+                    $POTUS
+                  </Text>  
+                </HStack>
+                <HStack gap="8" grow alignHorizontal="center" >                  
+                  <Text size="28">
+                    TOKEN TO THE   
+                  </Text>
+                  <Text color="red"size="28">
+                    PRESIDENT.
+                  </Text>                                 
+                </HStack>
+              </VStack>    
+          </Row>
+          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
+        </Rows>        
+      </Box>
     ),
     intents: [   
       <Button action="/">Back</Button>,     
@@ -106,87 +143,60 @@ app.frame('/how', (c) => {
 app.frame('/what', (c) => {
   const { buttonValue, status } = c
   return c.res({
-    image: (
-      <div
-        style={{
-          alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
-          backgroundSize: '100% 100%',
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          height: '100%',
-          justifyContent: 'center',
-          textAlign: 'center',
-          width: '100%',
-        }}
+    image: (      
+      <Box
+        grow
+        alignVertical="center"
+        backgroundColor="beige"
+        padding="4"
       >
-        <div
-          style={{
-            color: 'white',
-            fontSize: 60,
-            fontStyle: 'normal',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            marginTop: 30,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          This is the third Frame.
-        </div>
-      </div>
+        <Rows gap="8" grow>        
+          <Row backgroundColor="beige" height="2/20">
+            <HStack gap="8" grow alignHorizontal="center" >
+              <Text size="28">
+                WHAT CAN
+              </Text>
+              <Text color="red" size="28" style='bold'>
+                YOU
+              </Text>
+              <Text size="28">
+                DO?
+              </Text>
+            </HStack>  
+          </Row>
+          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+            <Image src="/uncleSamTransparent.png" width={'256'}/>
+          </Row>
+          <Row backgroundColor="beige" height="6/20" >
+            <VStack gap="0" grow alignVertical="center">
+              <HStack gap="8" grow alignHorizontal="center" >
+                  <Text size="28">
+                    LIKE, RECAST, & 
+                  </Text>                  
+                  <Text color="red" size="28">
+                    FOLLOW
+                  </Text>  
+                </HStack>
+                <HStack gap="8" grow alignHorizontal="center" >                  
+                  <Text size="28">
+                    TO RECEIVE
+                  </Text>
+                  <Text color="red"size="28">
+                    $POTUS
+                  </Text>
+                  <Text size="28">
+                    BEFORE THE PRESIDENT.
+                  </Text>                               
+                </HStack>
+              </VStack>    
+          </Row>
+          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
+        </Rows>        
+      </Box>
     ),
-    intents: [   
-      <Button action="/how">Back</Button>,     
-      <Button action="/airdrop">Click To Airdrop</Button>, 
-    ],
-  })
-})
-
-app.frame('/airdrop', (c) => {
-  const { buttonValue, status } = c
-  return c.res({
-    image: (
-      <div
-        style={{
-          alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
-          backgroundSize: '100% 100%',
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          height: '100%',
-          justifyContent: 'center',
-          textAlign: 'center',
-          width: '100%',
-        }}
-      >
-        <div
-          style={{
-            color: 'white',
-            fontSize: 60,
-            fontStyle: 'normal',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            marginTop: 30,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          This is the airdrop result Frame.
-        </div>
-      </div>
-    ),
-    intents: [
-      <Button.Reset>Reset</Button.Reset>,
-      <Button.Link href="https://www.youtube.com/watch?v=dngMrWsmHBM">More on POTUS.BET</Button.Link>,      
+    intents: [      
+      <Button.Reset>Reset</Button.Reset>,  
+      <Button.Link href="https://warpcast.com/~/channel/potus">Coming Airdrop on /POTUS</Button.Link>,
     ],
   })
 })
