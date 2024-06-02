@@ -27,50 +27,48 @@ app.frame('/', (c) => {
       <Box
         grow
         alignVertical="center"
-        backgroundColor="beige"
-        padding="4"
+        backgroundColor="beige"        
+        padding="6"
       >
         <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height="2/20">
+          <Row backgroundColor="beige" height='1/7'>
             <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="28">
-                SO
+              <Text size="24">
+                IT'S
               </Text>
-              <Text color="red" size="28" style='bold'>
-                ONCHAIN SUMMER
-              </Text>
-              <Text size="28">
-                BEGINS!
-              </Text>
+              <Text color="red" size="24">
+                ONCHAIN SUMMER!
+              </Text>              
             </HStack>  
           </Row>
-          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+          <Row backgroundColor="beige" alignHorizontal="center" height='5/7' alignVertical="center"> 
             <Image src="/uncleSamTransparent.png" width={'256'}/>
           </Row>
-          <Row backgroundColor="beige" height="6/20" >
+          <Row backgroundColor="beige" height='2/7'>
             <VStack gap="0" grow alignVertical="center">
               <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="28">
-                    I WANT
-                  </Text>                  
-                  <Text color="red" size="28">
-                    YOU
-                  </Text>  
-                </HStack>
-                <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="28">
-                    TO BRING
-                  </Text>
-                  <Text color="red"size="28">
-                    POTUS
-                  </Text>
-                  <Text size="28">
-                    ONCHAIN!
-                  </Text>
-                </HStack>
-              </VStack>    
+                <Text size="24">
+                  I WANT
+                </Text>                  
+                <Text color="red" size="24">
+                  YOU
+                </Text>  
+              </HStack>
+              <HStack gap="8" grow alignHorizontal="center" >
+                <Text size="24">
+                  TO BRING
+                </Text>
+                <Text color="red"size="24">
+                  POTUS ONCHAIN!
+                </Text>                
+              </HStack>
+              <HStack gap="8" grow alignHorizontal="right" alignVertical='top'>
+                <Text size="12">
+                POTUS.BET
+                </Text>                  
+              </HStack>
+            </VStack>  
           </Row>
-          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
         </Rows>        
       </Box>
     ),
@@ -89,46 +87,47 @@ app.frame('/how', (c) => {
         grow
         alignVertical="center"
         backgroundColor="beige"
-        padding="4"
+        padding="6"
       >
         <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height="2/20">
+          <Row backgroundColor="beige" height="1/7">
             <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="28">
+              <Text size="24">
                 HOW TO BRING
               </Text>
-              <Text color="red" size="28" style='bold'>
-                POTUS
-              </Text>
-              <Text size="28">
-                ONCHAIN?
-              </Text>
+              <Text color="red" size="24" style='bold'>
+                POTUS ONCHAIN?
+              </Text>              
             </HStack>  
           </Row>
-          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+          <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
             <Image src="/uncleSamTransparent.png" width={'256'}/>
           </Row>
-          <Row backgroundColor="beige" height="6/20" >
+          <Row backgroundColor="beige" height="2/7" >
             <VStack gap="0" grow alignVertical="center">
               <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="28">
+                  <Text size="24">
                     BY AIRDROP
-                  </Text>                  
-                  <Text color="red" size="28">
+                  </Text>
+                  <Text color="red" size="24">
                     $POTUS
                   </Text>  
                 </HStack>
                 <HStack gap="8" grow alignHorizontal="center" >                  
-                  <Text size="28">
+                  <Text size="24">
                     TOKEN TO THE   
                   </Text>
-                  <Text color="red"size="28">
+                  <Text color="red" size="24">
                     PRESIDENT.
                   </Text>                                 
                 </HStack>
+                <HStack gap="8" grow alignHorizontal="right" >
+                  <Text size="12">
+                  POTUS.BET
+                  </Text>                  
+                </HStack>
               </VStack>    
-          </Row>
-          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
+          </Row>          
         </Rows>        
       </Box>
     ),
@@ -150,46 +149,50 @@ app.frame('/what', (c) => {
         padding="4"
       >
         <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height="2/20">
+          <Row backgroundColor="beige" height="1/7">
             <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="28">
+              <Text size="24">
                 WHAT CAN
               </Text>
-              <Text color="red" size="28" style='bold'>
+              <Text color="red" size="24">
                 YOU
               </Text>
-              <Text size="28">
+              <Text size="24">
                 DO?
               </Text>
             </HStack>  
           </Row>
-          <Row backgroundColor="beige" height="12/20" alignHorizontal="center" > 
+          <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
             <Image src="/uncleSamTransparent.png" width={'256'}/>
           </Row>
-          <Row backgroundColor="beige" height="6/20" >
+          <Row backgroundColor="beige" height="2/7" >
             <VStack gap="0" grow alignVertical="center">
               <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="28">
+                  <Text size="24">
                     LIKE, RECAST, & 
                   </Text>                  
-                  <Text color="red" size="28">
+                  <Text color="red" size="24">
                     FOLLOW
                   </Text>  
                 </HStack>
                 <HStack gap="8" grow alignHorizontal="center" >                  
-                  <Text size="28">
+                  <Text size="24">
                     TO RECEIVE
                   </Text>
-                  <Text color="red"size="28">
+                  <Text color="red" size="24">
                     $POTUS
                   </Text>
-                  <Text size="28">
+                  <Text size="24">
                     BEFORE THE PRESIDENT.
                   </Text>                               
                 </HStack>
+                <HStack gap="8" grow alignHorizontal="right" >
+                  <Text size="12">
+                  POTUS.BET
+                  </Text>                  
+                </HStack>
               </VStack>    
-          </Row>
-          <Row backgroundColor="beige" height="1/20" fontSize={'12'} alignHorizontal="center"> POTUS.BET</Row>
+          </Row>          
         </Rows>        
       </Box>
     ),
