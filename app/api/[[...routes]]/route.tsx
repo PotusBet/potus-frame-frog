@@ -59,7 +59,7 @@ app.frame('/', (c) => {
                   TO BRING
                 </Text>
                 <Text color="red"size="24">
-                  POTUS ONCHAIN!
+                  POTUS ONCHAIN.
                 </Text>                
               </HStack>
               <HStack gap="8" grow alignHorizontal="right" alignVertical='top'>
@@ -118,7 +118,7 @@ app.frame('/how', (c) => {
                     TOKEN TO THE   
                   </Text>
                   <Text color="red" size="24">
-                    PRESIDENT.
+                    US PRESIDENT.
                   </Text>                                 
                 </HStack>
                 <HStack gap="8" grow alignHorizontal="right" >
