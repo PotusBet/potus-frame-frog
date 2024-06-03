@@ -5,14 +5,14 @@ import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
 import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
-import whyImage from "./Slide1.png"
+// import whyImage from "./Slide1.png"
 
-import { Box, Heading, Text, VStack, Rows, Image, Row, HStack, vars } from './ui'
+// Uncle Sam IPFS URL
+const uncleSamImage = "https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png";
 
 const app = new Frog({
   assetsPath: '/',
   basePath: '/api',
-  ui: { vars },
   // Supply a Hub to enable frame verification.
   // hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
 })
@@ -22,183 +22,54 @@ const app = new Frog({
 
 app.frame('/', (c) => {
   const { buttonValue, status } = c
-  return c.res({    
-    image: (      
-      <Box
-        grow
-        alignVertical="center"
-        backgroundColor="beige"        
-        padding="6"
-      >
-        <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height='1/7'>
-            <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="24">
-                IT'S
-              </Text>
-              <Text color="red" size="24">
-                ONCHAIN SUMMER!
-              </Text>              
-            </HStack>  
-          </Row>
-          <Row backgroundColor="beige" alignHorizontal="center" height='5/7' alignVertical="center"> 
-            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
-          </Row>
-          <Row backgroundColor="beige" height='2/7'>
-            <VStack gap="0" grow alignVertical="center">
-              <HStack gap="8" grow alignHorizontal="center" >
-                <Text size="24">
-                  I WANT
-                </Text>                  
-                <Text color="red" size="24">
-                  YOU
-                </Text>  
-              </HStack>
-              <HStack gap="8" grow alignHorizontal="center" >
-                <Text size="24">
-                  TO BRING
-                </Text>
-                <Text color="red"size="24">
-                  POTUS ONCHAIN.
-                </Text>                
-              </HStack>
-              <HStack gap="8" grow alignHorizontal="right" alignVertical='top'>
-                <Text size="12">
-                POTUS.BET
-                </Text>                  
-              </HStack>
-            </VStack>  
-          </Row>
-        </Rows>        
-      </Box>
+  return c.res({
+    image: (
+      <div style={{
+        alignItems: 'center',        
+        backgroundSize: '100% 100%',
+        display: 'flex',
+        flexDirection: 'column',        
+        height: '100%',
+        justifyContent: 'center',
+        textAlign: 'center',
+        width: '100%',
+        backgroundColor: '#E5CDB5',                                                                      
+        fontFamily: 'Arial, sans-serif',
+        fontSize: '48px',
+        color: '#000',
+      }}>
+        <div style={{                
+          display: 'flex',
+          flexDirection: 'row',                                      
+        }}>          
+          <span>HOW TO BRING</span>          
+          <span style={{color:'red', paddingLeft: '14px'}}>POTUS ONCHAIN?</span>
+        </div>
+        <img src={uncleSamImage} alt="Uncle Sam" style={{ height: '360' }} />
+        <div style={{                
+          display: 'flex',
+          flexDirection: 'row',                                      
+        }}>
+          <span>BY AIRDROP</span>
+          <span style={{color:'red', paddingLeft: '14px'}}>$POTUS</span>
+        </div>
+        <div style={{                
+          display: 'flex',
+          flexDirection: 'row',                                      
+        }}>
+          <span>TOKEN TO THE </span>
+          <span style={{color:'red', paddingLeft: '14px'}}>US PRESIDENT.</span>          
+        </div>
+        <div style={{                
+          display: 'flex',
+          flexDirection: 'row',                                                     
+        }}>
+          <span style={{fontSize:'20'}}>POTUS.BET</span>    
+        </div>
+      </div>
     ),
-  
     intents: [      
       <Button action="/how">Click To Airdrop</Button>,
-    ],
-  })
-})
-
-app.frame('/how', (c) => {
-  const { buttonValue, status } = c
-  return c.res({
-    image: (      
-      <Box
-        grow
-        alignVertical="center"
-        backgroundColor="beige"
-        padding="6"
-      >
-        <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height="1/7">
-            <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="24">
-                HOW TO BRING
-              </Text>
-              <Text color="red" size="24" style='bold'>
-                POTUS ONCHAIN?
-              </Text>              
-            </HStack>  
-          </Row>
-          <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
-            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
-          </Row>
-          <Row backgroundColor="beige" height="2/7" >
-            <VStack gap="0" grow alignVertical="center">
-              <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="24">
-                    BY AIRDROP
-                  </Text>
-                  <Text color="red" size="24">
-                    $POTUS
-                  </Text>  
-                </HStack>
-                <HStack gap="8" grow alignHorizontal="center" >                  
-                  <Text size="24">
-                    TOKEN TO THE   
-                  </Text>
-                  <Text color="red" size="24">
-                    US PRESIDENT.
-                  </Text>                                 
-                </HStack>
-                <HStack gap="8" grow alignHorizontal="right" >
-                  <Text size="12">
-                  POTUS.BET
-                  </Text>                  
-                </HStack>
-              </VStack>    
-          </Row>          
-        </Rows>        
-      </Box>
-    ),
-    intents: [   
-      <Button action="/">Back</Button>,     
-      <Button action="/what">Click To Airdrop</Button>, 
-    ],
-  })
-})
-
-app.frame('/what', (c) => {
-  const { buttonValue, status } = c
-  return c.res({
-    image: (      
-      <Box
-        grow
-        alignVertical="center"
-        backgroundColor="beige"
-        padding="4"
-      >
-        <Rows gap="8" grow>        
-          <Row backgroundColor="beige" height="1/7">
-            <HStack gap="8" grow alignHorizontal="center" >
-              <Text size="24">
-                WHAT CAN
-              </Text>
-              <Text color="red" size="24">
-                YOU
-              </Text>
-              <Text size="24">
-                DO?
-              </Text>
-            </HStack>  
-          </Row>
-          <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
-            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
-          </Row>
-          <Row backgroundColor="beige" height="2/7" >
-            <VStack gap="0" grow alignVertical="center">
-              <HStack gap="8" grow alignHorizontal="center" >
-                  <Text size="24">
-                    LIKE, RECAST, & 
-                  </Text>                  
-                  <Text color="red" size="24">
-                    FOLLOW
-                  </Text>  
-                </HStack>
-                <HStack gap="8" grow alignHorizontal="center" >                  
-                  <Text size="24">
-                    TO RECEIVE
-                  </Text>
-                  <Text color="red" size="24">
-                    $POTUS
-                  </Text>
-                  <Text size="24">
-                    BEFORE THE PRESIDENT.
-                  </Text>                               
-                </HStack>
-                <HStack gap="8" grow alignHorizontal="right" >
-                  <Text size="12">
-                  POTUS.BET
-                  </Text>                  
-                </HStack>
-              </VStack>    
-          </Row>          
-        </Rows>        
-      </Box>
-    ),
-    intents: [      
-      <Button.Reset>Reset</Button.Reset>,  
-      <Button.Link href="https://warpcast.com/~/channel/potus">Coming Airdrop on /POTUS</Button.Link>,
     ],
   })
 })
