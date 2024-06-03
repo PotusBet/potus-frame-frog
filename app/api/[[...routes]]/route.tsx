@@ -74,7 +74,7 @@ app.frame('/', (c) => {
     ),
   
     intents: [      
-      <Button action="/how">Click To Airdrop</Button>,     
+      <Button action="/how">Click To Airdrop</Button>,
     ],
   })
 })
