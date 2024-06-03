@@ -42,7 +42,7 @@ app.frame('/', (c) => {
             </HStack>  
           </Row>
           <Row backgroundColor="beige" alignHorizontal="center" height='5/7' alignVertical="center"> 
-            {/* <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/> */}
+            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
           </Row>
           <Row backgroundColor="beige" height='2/7'>
             <VStack gap="0" grow alignVertical="center">
@@ -101,7 +101,7 @@ app.frame('/how', (c) => {
             </HStack>  
           </Row>
           <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
-            {/* <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/> */}
+            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
           </Row>
           <Row backgroundColor="beige" height="2/7" >
             <VStack gap="0" grow alignVertical="center">
@@ -163,7 +163,7 @@ app.frame('/what', (c) => {
             </HStack>  
           </Row>
           <Row backgroundColor="beige" height="5/7" alignHorizontal="center" alignVertical='center'> 
-            {/* <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/> */}
+            <Image src="https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png" width={'256'}/>
           </Row>
           <Row backgroundColor="beige" height="2/7" >
             <VStack gap="0" grow alignVertical="center">
