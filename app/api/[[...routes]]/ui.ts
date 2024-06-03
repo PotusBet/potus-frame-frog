@@ -1,4 +1,7 @@
+/** @jsxImportSource frog/jsx */
+
 import { colors, createSystem } from 'frog/ui'
+
 
 export const {
   Box,
@@ -16,34 +19,34 @@ export const {
   VStack,
   vars,
 } = createSystem({
-  fonts: {
-    default: [
-      {
-        name: 'Open Sans',
-        source: 'google',
-        style:'normal',
-        weight: 400,                
-      },
-      {
-        name: 'Open Sans',
-        source: 'google',
-        style:'normal',
-        weight: 600,        
-      },
-      {
-        name: 'Open Sans',
-        source: 'google',
-        style:'normal',     
-        weight: 700,             
-      },
-    ],
-    madimi: [
-      {
-        name: 'Madimi One',
-        source: 'google',
-      },
-    ],
-  },
+  // fonts: {
+  //   default: [
+  //     {
+  //       name: 'Open Sans',
+  //       source: 'google',
+  //       style:'normal',
+  //       weight: 400,                
+  //     },
+  //     {
+  //       name: 'Open Sans',
+  //       source: 'google',
+  //       style:'normal',
+  //       weight: 600,        
+  //     },
+  //     {
+  //       name: 'Open Sans',
+  //       source: 'google',
+  //       style:'normal',     
+  //       weight: 700,             
+  //     },
+  //   ],
+  //   madimi: [
+  //     {
+  //       name: 'Madimi One',
+  //       source: 'google',
+  //     },
+  //   ],
+  // },
   
   colors: {
     text: '#000000',
