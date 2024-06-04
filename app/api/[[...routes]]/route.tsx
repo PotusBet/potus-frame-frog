@@ -34,7 +34,7 @@ app.frame('/', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '44px',
+        fontSize: '49px',
         color: '#fff',
       }}>
         <div style={{                
@@ -92,7 +92,7 @@ app.frame('/invite', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '44px',
+        fontSize: '49px',
         color: '#fff',
       }}>
         <div style={{                
@@ -149,7 +149,7 @@ app.frame('/mission', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '44px',
+        fontSize: '49px',
         color: '#fff',
       }}>
         <div style={{                
@@ -205,7 +205,7 @@ app.frame('/tokenomic', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '44px',
+        fontSize: '49px',
         color: '#fff',
       }}>
         <div style={{                
@@ -260,7 +260,7 @@ app.frame('/airdrop', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '44px',
+        fontSize: '49px',
         color: '#fff',        
       }}>
         <div style={{                
