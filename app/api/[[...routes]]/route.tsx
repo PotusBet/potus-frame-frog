@@ -297,7 +297,7 @@ app.frame('/airdrop', (c) => {
     ),
     intents: [      
       <Button.Reset>Reset</Button.Reset>,
-      // <Button.Link href="/https://warpcast.com/~/channel/onchainpotus">Join onchainpotus NOW</Button.Link>,
+      <Button.Link href="https://warpcast.com/~/channel/onchainpotus">Join /onchainpotus NOW</Button.Link>,
     ],
   })
 })
