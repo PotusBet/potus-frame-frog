@@ -1,6 +1,6 @@
 /** @jsxImportSource frog/jsx */
 
-import { Button, Frog, TextInput } from 'frog'
+import { Button, Frog} from 'frog'
 import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
 import { handle } from 'frog/next'
@@ -283,13 +283,13 @@ app.frame('/airdrop', (c) => {
         </div>
         <div style={{                
           display: 'flex',
-          flexDirection: 'row',                                   
+          flexDirection: 'row',                            
         }}>
           <span style={{color:'yellow', paddingLeft: '14px'}}>Recast, Follow & Join /onchainpotus NOW.</span>                  
         </div>
         <div style={{                
           display: 'flex',
-          flexDirection: 'row',          
+          flexDirection: 'row',   
         }}>
         <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span> 
         </div>
@@ -297,7 +297,7 @@ app.frame('/airdrop', (c) => {
     ),
     intents: [      
       <Button.Reset>Reset</Button.Reset>,
-      <Button.Link href="/https://warpcast.com/~/channel/onchainpotus">Join /onchainpotus NOW</Button.Link>,
+      // <Button.Link href="/https://warpcast.com/~/channel/onchainpotus">Join onchainpotus NOW</Button.Link>,
     ],
   })
 })
