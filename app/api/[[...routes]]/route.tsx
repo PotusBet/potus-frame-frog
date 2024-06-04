@@ -35,7 +35,7 @@ app.frame('/', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '40px',
+        fontSize: '44px',
         color: '#fff',
       }}>
         <div style={{                
@@ -68,7 +68,7 @@ app.frame('/', (c) => {
           flexDirection: 'row',                                                     
         }}>
         
-        <span style={{fontSize:'20', marginLeft: '1050px'}}>/potus</span>    
+        <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span>    
         </div>
       </div>
     ),
@@ -93,7 +93,7 @@ app.frame('/invite', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '40px',
+        fontSize: '44px',
         color: '#fff',
       }}>
         <div style={{                
@@ -124,7 +124,7 @@ app.frame('/invite', (c) => {
           flexDirection: 'row',                                                     
         }}>
 
-        <span style={{fontSize:'20', marginLeft: '1050px'}}>/potus</span>    
+        <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span>
         </div>
       </div>
     ),
@@ -150,7 +150,7 @@ app.frame('/mission', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '40px',
+        fontSize: '44px',
         color: '#fff',
       }}>
         <div style={{                
@@ -158,7 +158,7 @@ app.frame('/mission', (c) => {
           flexDirection: 'row',                                      
         }}>          
           <span>What is the $POTUS</span>          
-          <span style={{color:'yellow', paddingLeft: '14px'}}> MISSION?</span>          
+          <span style={{color:'yellow', paddingLeft: '14px'}}> PURPOSE?</span>          
         </div>
         <img src={uncleSamImage} alt="Uncle Sam" style={{ height: '360' }} />
         <div style={{                
@@ -180,7 +180,7 @@ app.frame('/mission', (c) => {
           display: 'flex',
           flexDirection: 'row',                                                     
         }}>          
-        <span style={{fontSize:'20', marginLeft: '1050px'}}>/potus</span>
+        <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span>
         </div>
       </div>
     ),
@@ -206,7 +206,7 @@ app.frame('/tokenomic', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '40px',
+        fontSize: '44px',
         color: '#fff',
       }}>
         <div style={{                
@@ -234,7 +234,7 @@ app.frame('/tokenomic', (c) => {
           display: 'flex',
           flexDirection: 'row',                                                     
         }}>
-        <span style={{fontSize:'20', marginLeft: '1050px'}}>/potus</span> 
+        <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span>
         </div>
       </div>
     ),
@@ -261,7 +261,7 @@ app.frame('/airdrop', (c) => {
         width: '100%',
         backgroundColor: '#115DFE',                                                                      
         fontFamily: 'Arial, sans-serif',
-        fontSize: '40px',
+        fontSize: '44px',
         color: '#fff',        
       }}>
         <div style={{                
@@ -277,27 +277,27 @@ app.frame('/airdrop', (c) => {
           display: 'flex',
           flexDirection: 'row',                                      
         }}>
-          <span>Snapshot Coming.</span>
-          <span style={{color:'yellow', paddingLeft: '14px'}}>Like & Recast</span>         
+          <span style={{color:'yellow', paddingRight: '14px'}}>Snapshot</span>
+          <span> Coming.</span>
+             
         </div>
         <div style={{                
           display: 'flex',
-          flexDirection: 'row',                                      
+          flexDirection: 'row',                                   
         }}>
-          <span style={{color:'yellow', paddingRight: '14px'}}>Follow & Join /Potus </span>
-          <span>Channel.</span>                  
+          <span style={{color:'yellow', paddingLeft: '14px'}}>Recast, Follow & Join /onchainpotus NOW.</span>                  
         </div>
         <div style={{                
           display: 'flex',
           flexDirection: 'row',          
         }}>
-        <span style={{fontSize:'20', marginLeft: '1050px'}}>/potus</span> 
+        <span style={{fontSize:'20', marginLeft: '1000px'}}>@onchainpotus</span> 
         </div>
       </div>
     ),
     intents: [      
-      <Button action="/tokenomic">Back</Button>,
-      <Button.Redirect location="/https://warpcast.com/~/channel/onchainsummer">Join Potus Channel</Button.Redirect>,
+      <Button.Reset>Reset</Button.Reset>,
+      <Button.Link href="/https://warpcast.com/~/channel/onchainpotus">Join /onchainpotus NOW</Button.Link>,
     ],
   })
 })
