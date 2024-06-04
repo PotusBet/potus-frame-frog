@@ -5,7 +5,6 @@ import { devtools } from 'frog/dev'
 // import { neynar } from 'frog/hubs'
 import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
-// import whyImage from "./Slide1.png"
 
 // Uncle Sam IPFS URL
 const uncleSamImage = "https://bafybeifg6bm334q2eozek2kqnwlwafz3gsstlyeqxo7aegsfbziiqqxeme.ipfs.w3s.link/uncleSamTransparent.png";
@@ -61,7 +60,7 @@ app.frame('/', (c) => {
           <span style={{color:'yellow', paddingLeft: '14px', paddingRight:'14px'}}>WORLD</span> 
           <span>& The</span>
           <span style={{color:'yellow', paddingLeft: '14px', paddingRight:'14px'}}>POTUS</span> 
-          <span>Onchain!</span>
+          <span>Onchain.</span>
         </div>
         <div style={{                
           display: 'flex',
